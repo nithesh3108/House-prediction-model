@@ -9,6 +9,7 @@ import pandas as pd
 from flask import Flask, jsonify, request
 from werkzeug.exceptions import BadRequest, UnsupportedMediaType
 
+print("Starting Flask API for house price prediction model...")
 
 app = Flask(__name__)
 MODEL_PATH = Path(__file__).resolve().parent / "house_price_model.pkl"
